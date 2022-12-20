@@ -72,6 +72,12 @@
       "type": "component",
       "repeatable": true,
       "component": "cart2.cart2"
+    },
+    "cart3": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cart.cart",
+      "mappedBy": "user"
     }
   }
 }

@@ -21,6 +21,12 @@
       "type": "integer",
       "required": true,
       "min": 0
+    },
+    "carts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cart.cart",
+      "mappedBy": "order_detail"
     }
   }
 }
