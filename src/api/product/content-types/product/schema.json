@@ -30,11 +30,15 @@
       ]
     },
     "thumbnail": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "stripe_link": {
+      "type": "string",
       "required": true
     }
   }

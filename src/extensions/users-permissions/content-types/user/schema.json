@@ -62,22 +62,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "cart": {
-      "type": "component",
-      "repeatable": false,
-      "component": "cart.cart"
-    },
-    "cart2": {
-      "type": "component",
-      "repeatable": true,
-      "component": "cart2.cart2"
-    },
-    "cart3": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::cart.cart",
-      "mappedBy": "user"
     }
   }
 }
