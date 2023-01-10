@@ -40,6 +40,20 @@
     "stripe_link": {
       "type": "string",
       "required": true
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "rich"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "product"
     }
   }
 }
